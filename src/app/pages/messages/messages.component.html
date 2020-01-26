@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-md-8">
+      <table class="table">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Text</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let message of messages | async">
+          <td>{{message.id}}</td>
+          <td>{{message.text}}</td>
+        <tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
